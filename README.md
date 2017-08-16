@@ -4,7 +4,7 @@
 https://weui.io
 
 # AppID(小程序ID) 	
-wx49fb72249d0c8055 -Du, wxd320211d29cea4f9 -Cristiano
+wxd320211d29cea4f9
 
 # 服务器配置	说明
 request合法域名	https://todaynowork.group
