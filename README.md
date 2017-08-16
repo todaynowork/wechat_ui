@@ -4,8 +4,8 @@
 https://weui.io
 
 # 本地开发设置 
-AppID(小程序ID)  wxab931d22fde028bc
-项目名称         3s
+AppID(小程序ID)  wxab931d22fde028bc <br/>
+项目名称         3s <br/>
 开发者           Ada 邱小树 冰冰凉 兜 成超
 
 # 服务器配置	说明
