@@ -1,9 +1,7 @@
 {
   "pages": [
-    "pages/index/index",
-      "pages/task/tasks",
-    "pages/logs/logs"
- 
+    "pages/calendar/calendar"
+    
   ],
   "window": {
     "backgroundTextStyle": "light",

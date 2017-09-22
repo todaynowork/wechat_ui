@@ -1,3 +1,0 @@
-<view> 点击左上角返回回到之前页面
-<button bindtap="wxRequest">点击设置以上按钮plain属性</button>
-</view>
