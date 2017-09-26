@@ -14,10 +14,9 @@ App({
     } else {
       //调用登录接口
       wx.getUserInfo({
-        withCredentials: true,
+        withCredentials: false,
         success: function(res) {
           that.globalData.userInfo = res.userInfo
-          console.log(res)
           typeof cb == "function" && cb(that.globalData.userInfo)
         }
       })
@@ -28,3 +27,5 @@ App({
     userInfo: null
   }
 })
+
+
