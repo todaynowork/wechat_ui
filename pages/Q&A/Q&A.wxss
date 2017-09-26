@@ -1,0 +1,48 @@
+/* pages/Q&A/Q&A.wxss */
+.userinfo {
+  display: flex;
+  align-items: left;
+}
+
+.userinfo-avatar {
+  width: 15%;
+  height: 15%;
+  margin: 3rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+  margin-left:3rpx;
+  
+}
+
+
+.question{
+   display: flex;
+   flex-direction: column;
+}
+
+.questionContent{
+ margin: 30rpx;
+ color: blue;
+}
+
+.answerCounts{
+  margin: 30rpx;
+  
+}
+
+.questionDate{
+ float: right;
+ margin-right: 30rpx;
+  
+}
+
+p{
+  margin: 30px 0px;
+}
+
+
+
+
