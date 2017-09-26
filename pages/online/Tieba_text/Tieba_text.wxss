@@ -1,0 +1,41 @@
+/* pages/online/Tieba_text/Tieba_text.wxss */
+.p_title{
+  text-align: center;
+  padding-top: 25px;
+}
+.p_text{
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+}
+.commentA{
+  border-top-style: solid;
+  border-top-color: #f0f0f0;
+  border-top-width: 1px;
+  padding-bottom: 10px;
+}
+.commentTitle{
+  
+}
+.comment1{
+  background-color: #f0f0f0;
+  height: 30px;
+  padding-top:10px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+}
+.commentName{
+  color: #97cbff;
+}
+.commentName{
+  font-size:1em;
+}
+.comment{
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-left:10px; 
+  padding-bottom: 20px;
+  border-bottom-style: solid;
+  border-bottom-color: #f0f0f0;
+  border-bottom-width: 1px;
+}

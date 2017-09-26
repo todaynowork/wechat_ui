@@ -1,12 +1,50 @@
 {
   "pages": [
-    "pages/calendar/calendar"
-    
+    "pages/My_management/My_management",
+    "pages/Collection/Collection",
+    "pages/History/History",
+    "pages/online/online",
+    "pages/home/home",
+    "pages/CourtInfo/CourtInfo",
+    "pages/online/Tieba_text/Tieba_text",
+	 "pages/calendar/calendar",
+    "pages/online/Tieba_write/Tieba_write"
   ],
   "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
+    "navigationBarBackgroundColor": "#F9F9F9",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light"
+  },
+  "tabBar": {
+    "color": "#BEBEBE",
+    "selectedColor": "black",
+    "borderStyle": "black",
+    "list": [
+      {
+        "selectedIconPath": "image/question_check@1x.png",
+        "iconPath": "image/question_uncheck@1x.png",
+        "pagePath": "pages/online/online",
+        "text": "问题合集"
+      },
+      {
+        "selectedIconPath": "image/knowledge_check@1x.png",
+        "iconPath": "image/knowledge_uncheck@1x.png",
+        "pagePath": "pages/home/home",
+        "text": "社区论坛"
+      },
+      {
+        "selectedIconPath": "image/ask_check@1x.png",
+        "iconPath": "image/ask_uncheck@1x.png",
+        "pagePath": "pages/home/home",
+        "text": "我的提问"
+      },
+      {
+        "selectedIconPath": "image/set_check@1x.png",
+        "iconPath": "image/set_uncheck@1x.png",
+        "pagePath": "pages/My_management/My_management",
+        "text": "个人中心"
+      }
+    ]
   }
 }

@@ -1,0 +1,20 @@
+<view class="classname">
+    <view class="p_title">
+        {{title}}
+    </view>
+    <view class="p_text">
+        {{text}}
+    </view>
+    <view class="commentA">
+        <p class="commentTitle">全部回复</p>
+    </view>
+    <view wx:for="{{items}}" class="comment">
+        <view class="floor">{{item.floorC}}</view>
+        <view class="comnent0">{{item.comment0}}</view>
+        <view wx:for="{{item.aaas}}" wx:for-item="aaas" class="comment1">
+            <p class="commentName">{{aaas.name}}</p>
+            <p>：</p>
+            <p class="commenttext">{{aaas.content}}</p>
+        </view>
+    </view>
+</view>

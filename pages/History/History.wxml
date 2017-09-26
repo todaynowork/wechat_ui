@@ -1,0 +1,37 @@
+<!--index.wxml-->
+<view>
+  <view class="navbar">
+    <view class="navbar-item" wx:for="{{navbar}}" wx:for-index="idx" data-idx="{{idx}}" bindtap="swichNav">
+      <text class="navbar-text {{currentNavbar==idx ? 'active' : ''}}" style="width: 90%">{{item}}</text>
+    </view>
+  </view>
+  <!--看过的问题  -->
+  <scroll-view class="hot-item-container {{currentNavbar==0 ? '' : 'hidden'}}" style="height: {{systemInfo.windowHeight-81}}px;" scroll-y="true" bindscrolltolower="pullUpLoad">
+    <view class='container' wx:for="{{themes}}">
+      <image src="{{item.thumbnail}}" class="Imgall"></image>
+      <view>
+        <text class="textName">{{item.name}}</text>
+        <text class="textclassify">Java开发</text>
+        <text class="textTitle">如何确保N个线程可以访问N个资源的同时又不导致死锁？</text>
+      </view>
+      <image src="../../image/person_answer@1x.png" class="ImgComments"></image>
+      <text class='TextComments'>3个人回答</text>
+      <image src="../../image/knowledge_uncheck@1x.png" class="ImgTime"></image>
+      <text class='TextTime'>2017/09/01</text>
+    </view>
+
+  </scroll-view>
+  <!--看过的知识  -->
+  <scroll-view class="latest-item-container {{currentNavbar==1 ? '' : 'hidden'}}" style="height: {{systemInfo.windowHeight-81}}px;" scroll-y="true" bindtap="jumpToCourtDetailInfo" >
+    <view class='containerOther' wx:for="{{Knowledge}}">
+      <view class='containerOtherInside'>
+        <image src="../../image/小宋佳.jpg" class="ImageKnow"></image>
+        <text class='textTittle'>{{item.name}}</text>
+        <text class='textContent'>{{item.content}}</text>
+        <view></view>
+      </view>
+    </view>
+ 
+  </scroll-view>
+
+</view>

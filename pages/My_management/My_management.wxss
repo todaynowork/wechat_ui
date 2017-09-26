@@ -1,0 +1,89 @@
+.header {
+  height: 246rpx;
+  background-color: #f9f9f9;
+  position: relative;
+}
+
+.image {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  position: absolute;
+  left: 44.25rpx;
+  top: 73rpx;
+}
+
+.ClaimButton {
+  background-color: #41a1e8;
+  width: 240rpx;
+  height: 81rpx;
+  font-size: 24rpx;
+  right: 21.75rpx;
+  position: absolute;
+  top: 100rpx;
+  color: #fff;
+  align-content: center;
+}
+
+.textButton {
+  line-height: 81rpx;
+}
+
+.ClaimImg {
+  width: 35rpx;
+  height: 35rpx;
+  top: 130rpx;
+  position: absolute;
+  right: 330rpx;
+}
+
+.textup {
+  font-size: 28rpx;
+  position: absolute;
+  top: 73rpx;
+  left: 194.5rpx;
+  /* font-weight: bold; */
+  color: #070707;
+}
+
+.textdown {
+  position: absolute;
+  top: 110rpx;
+  left: 194.5rpx;
+  font-size: 64rpx;
+  color: #41a1e8;
+}
+
+.textcenter {
+  position: absolute;
+  top: 150rpx;
+  left: 348rpx;
+  font-size: 24rpx;
+  color: #41a1e8;
+}
+
+.form {
+  border-bottom: 3rpx solid #ddd;
+  font-size: 28rpx;
+  height: 88rpx;
+  position: relative;
+  font-family: PingFangSC-Regular;
+  background-color: #FFFFFF;
+  /* font-weight: bold; */
+}
+
+.Imgall {
+  width: 55rpx;
+  height: 55rpx;
+  /* border-radius: 50%; */
+  position: absolute;
+  left: 48rpx;
+  top: 16rpx;
+}
+
+.textAll {
+  position: absolute;
+  left: 110.25rpx;
+  top: 21rpx;
+  /* font-size: 28rpx; */
+}

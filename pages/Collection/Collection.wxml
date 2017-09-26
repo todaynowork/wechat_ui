@@ -1,0 +1,8 @@
+    <view class='containerOther' wx:for="{{Collection}}">
+      <view class='containerOtherInside'>
+        <image src="../../image/小宋佳.jpg" class="ImageKnow"></image>
+        <text class='textTittle'>{{item.name}}</text>
+        <text class='textContent'>{{item.content}}</text>
+        <view></view>
+      </view>
+    </view>
