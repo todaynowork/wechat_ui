@@ -10,7 +10,8 @@
 	  "pages/calendar/calendar",
     "pages/online/Tieba_write/Tieba_write",
     "pages/dummy/dummy",
-    "pages/Q&A/Q&A"
+    "pages/Q&A/Q&A",
+    "pages/login/login"
   ],
   "window": {
     "navigationBarBackgroundColor": "#F9F9F9",
