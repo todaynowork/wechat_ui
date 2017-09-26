@@ -47,6 +47,12 @@
         "iconPath": "image/set_uncheck@1x.png",
         "pagePath": "pages/My_management/My_management",
         "text": "个人中心"
+      },
+      {
+        "selectedIconPath": "image/set_check@1x.png",
+        "iconPath": "image/set_uncheck@1x.png",
+        "pagePath": "pages/dummy/dummy",
+        "text": "DummyLinks"
       }
     ]
   }
