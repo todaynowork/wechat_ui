@@ -1,7 +1,8 @@
 {
   "pages": [
+    "pages/dummy/dummy",
+    "pages/Q&A/Q&A",
     "pages/calendar/calendar"
-    
   ],
   "window": {
     "backgroundTextStyle": "light",
