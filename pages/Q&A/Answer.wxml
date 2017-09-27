@@ -1,0 +1,10 @@
+<!--pages/Q&A/Answer.wxml-->
+<view>
+  <text class="MyAnswer">回答内容</text>
+  <textarea class="AnswerContent"  maxlength="1500"  placeholder="请输入问题内容，最多可输入1500字......"></textarea>
+</view>
+
+<view  bindtap="SubAnswer" class="SubAnswer">
+      <button class="sub_button" >提交答案</button>
+</view>
+

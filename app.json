@@ -11,7 +11,8 @@
     "pages/online/Tieba_write/Tieba_write",
     "pages/dummy/dummy",
     "pages/Q&A/Q&A",
-    "pages/login/login"
+    "pages/login/login",
+    "pages/Q&A/Answer"
   ],
   "window": {
     "navigationBarBackgroundColor": "#F9F9F9",

@@ -1,0 +1,21 @@
+/* pages/Q&A/Answer.wxss */
+
+.MyAnswer{
+  color: #aaa;
+  margin: 50rpx;
+  font-size: 28rpx;
+}
+.AnswerContent{
+  background-color: #fff;
+  width: 100%;
+  font-size: 28rpx;
+  padding-left: 30rpx;
+  
+}
+.SubAnswer{
+  margin-top: 100rpx;
+}
+.sub_button{
+  background:lightblue;
+  color:#fff; 
+}
