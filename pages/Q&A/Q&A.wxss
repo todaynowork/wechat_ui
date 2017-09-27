@@ -1,48 +1,118 @@
-/* pages/Q&A/Q&A.wxss */
-.userinfo {
-  display: flex;
-  align-items: left;
+.header {
+  height: 250rpx;
+  border: 3rpx solid #ddd;
+  position:relative;
+  left:15rpx;
+  width: 95%;
+  background-color: #FFFFFF;
+  border-radius: 0.5em;
+  margin-bottom:10rpx;
 }
 
-.userinfo-avatar {
-  width: 15%;
-  height: 15%;
-  margin: 3rpx;
+.form {
+  border-bottom: 3rpx solid #ddd;
+  font-size: 28rpx;
+  height: 370rpx;
+  position: relative;
+  font-family: PingFangSC-Regular;
+  background-color: #FFFFFF;
+  margin-bottom:5rpx;
+}
+
+.Imguser {
+  position: absolute;
+  left: 33rpx;
+  width: 65rpx;
+  height: 65rpx;
+  border-radius: 50%; 
+}
+.Imglike {
+  position: absolute;
+  top:5rpx;
+  right: 153rpx;
+  width: 45rpx;
+  height: 45rpx;
+  border-radius: 50%; 
+}
+.Imgdislike {
+  position: absolute;
+  top:5rpx;
+  right: 43rpx;
+  width: 45rpx;
+  height: 45rpx;
+  border-radius: 50%; 
+}
+.Imghuifu {
+  position: absolute;
+  left: 25rpx;
+  bottom: 21rpx;
+  width: 45rpx;
+  height: 45rpx;
   border-radius: 50%;
 }
-
-.userinfo-nickname {
+.Imgbest {
+  position: absolute;
+  right: 25rpx;
+  bottom: 21rpx;
+  width: 125rpx;
+  height: 55rpx;
+}
+.ImgQAdate{
+  position: absolute;
+  right: 175rpx;
+  bottom: 21rpx;
+  width: 45rpx;
+  height: 45rpx;
+}
+.textAll {
+  position: absolute;
+  left: 110.25rpx;
+  top: 21rpx;
   color: #aaa;
-  margin-left:3rpx;
+}
+.textj{
+  position: absolute;
+  right: 50rpx;
   
+  top: 21rpx;
+  color: lightskyblue;
+  /*font-weight: bold;*/
 }
-
-
-.question{
-   display: flex;
-   flex-direction: column;
+.textlike {
+  position: absolute;
+  right: 120rpx;
+  top: 21rpx;
+  color: lightskyblue;
 }
-
-.questionContent{
- margin: 30rpx;
- color: blue;
+.textdislike {
+  position: absolute;
+  right: 25rpx;
+  top: 21rpx;
+  color: #aaa;
 }
-
-.answerCounts{
-  margin: 30rpx;
-  
+.textbody {
+  position: absolute;
+  left: 25rpx;
+  top: 70rpx;
 }
-
-.questionDate{
- float: right;
- margin-right: 30rpx;
-  
+.texthuifu {
+  position: absolute;
+  left: 85rpx;
+  bottom: 21rpx;
+  color: #aaa;
+  font-size: 28rpx;
 }
-
-p{
-  margin: 30px 0px;
+.textQAdate{
+  position: absolute;
+  right: 15rpx;
+  bottom: 21rpx;
+  color: #aaa;
+  font-size: 28rpx;
 }
-
-
-
-
+.ans_button{
+  background:lightblue;
+  color:#fff;
+}
+.ansbu{
+  background:white;
+}
