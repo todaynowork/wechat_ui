@@ -1,4 +1,4 @@
-// pages/Q&A/Answer.js
+﻿// pages/Q&A/Answer.js
 Page({
 
   /**
@@ -65,7 +65,7 @@ Page({
   },
   SubAnswer: function () {
     wx.navigateTo({
-      url: 'Q&A'
+      url: 'QA'
     })
   }
 })

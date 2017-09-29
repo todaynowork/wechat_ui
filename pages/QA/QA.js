@@ -29,7 +29,7 @@ Page({
   },
   toanswer: function () {
     wx.navigateTo({
-      url: '../answer/answer'
+      url: '../QA/Answer'
     })
     }
 });
