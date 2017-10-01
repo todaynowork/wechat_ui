@@ -11,10 +11,16 @@ App({
         if (res.code) {
           //发起网络请求
           let openIdReqConf = {
-            url: '/loginPost',
+            // url: '/loginPostTest',
             data: {
               code: res.code
             },
+            // header:{
+            //   'Content-Type':'application/x-www-form-urlencoded'
+            // },
+            // header: {
+            //   'Content-Type': 'application/json'
+            // },
             success: function (res) {
               
               if (res.data.errcode){
@@ -22,6 +28,9 @@ App({
                 console.log("did not get openid");
               }else{
                 that.globalData.token = res.data.sessionid;
+                that.wxRequest("/forumjson",{sucess:function(res){
+                  console.log(res.data);
+                }});
               }
             },
             method: 'POST'
@@ -61,7 +70,7 @@ App({
 
   globalData: {
     userInfo: null,
-    apiContextUrl: 'https://todaynowork.group/wechat-prod-1.0',
+    apiContextUrl: 'https://todaynowork.group/wechat-dev-1.0',
     token : 'null'
   }
 })
