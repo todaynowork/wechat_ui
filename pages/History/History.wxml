@@ -8,7 +8,8 @@
   <!--看过的问题  -->
   <scroll-view class="hot-item-container {{currentNavbar==0 ? '' : 'hidden'}}" style="height: {{systemInfo.windowHeight-81}}px;" scroll-y="true" bindscrolltolower="pullUpLoad">
     <view class='container' wx:for="{{themes}}">
-      <image src="{{item.thumbnail}}" class="Imgall"></image>
+      <image src="../../image/xiaosongjia.jpg" class="Imgall"></image>
+      <!-- <image src="{{item.thumbnail}}" class="Imgall"></image> -->
       <view>
         <text class="textName">{{item.name}}</text>
         <text class="textclassify">Java开发</text>
@@ -22,16 +23,16 @@
 
   </scroll-view>
   <!--看过的知识  -->
-  <scroll-view class="latest-item-container {{currentNavbar==1 ? '' : 'hidden'}}" style="height: {{systemInfo.windowHeight-81}}px;" scroll-y="true" bindtap="jumpToCourtDetailInfo" >
+  <scroll-view class="latest-item-container {{currentNavbar==1 ? '' : 'hidden'}}" style="height: {{systemInfo.windowHeight-81}}px;" scroll-y="true" bindtap="jumpToCourtDetailInfo">
     <view class='containerOther' wx:for="{{Knowledge}}">
       <view class='containerOtherInside'>
-        <image src="../../image/小宋佳.jpg" class="ImageKnow"></image>
+        <image src="../../image/xiaosongjia.jpg" class="ImageKnow"></image>
         <text class='textTittle'>{{item.name}}</text>
         <text class='textContent'>{{item.content}}</text>
         <view></view>
       </view>
     </view>
- 
+
   </scroll-view>
 
 </view>

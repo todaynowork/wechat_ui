@@ -23,6 +23,7 @@
   color: #41a1e8;
   border-bottom: 5rpx solid #41a1e8;
   background-color: #d9d9d9;
+  height: 44rpx;
 }
 
 .hidden {

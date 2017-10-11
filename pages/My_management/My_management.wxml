@@ -1,6 +1,6 @@
 <view>
   <view class="header">
-    <image src="../../image/小宋佳.jpg" class="image"></image>
+    <image src="../../image/xiaosongjia.jpg" class="image"></image>
     <view class='textall' wx:for="{{section}}">
       <text class="textup">{{item.name}}</text>
       <text class="textdown">{{item.Integral}}</text>
@@ -28,7 +28,7 @@
     </view>
     <view class='form'>
       <view bindtap='jumpToCollection'>
-        <image src="../../image/person_ favorite@1x.png" class="Imgall"></image>
+        <image src="../../image/person_favorite@1x.png" class="Imgall"></image>
         <text class='textAll'>我的收藏</text>
       </view>
     </view>
