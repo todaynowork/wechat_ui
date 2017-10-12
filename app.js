@@ -70,6 +70,7 @@ App({
 
   globalData: {
     userInfo: null,
+    hasLogin: false,
     apiContextUrl: 'https://todaynowork.group/wechat-dev-1.0',
     token : 'null'
   }

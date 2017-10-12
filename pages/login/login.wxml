@@ -1,8 +1,7 @@
-<import src="../../../common/head.wxml" />
-<import src="../../../common/foot.wxml" />
+
 
 <view class="container">
-  <template is="head" data="{{title: 'Login'}}"/>
+
 
   <view class="page-body">
     <view class="page-section">
@@ -16,6 +15,4 @@
       </block>
     </view>
   </view>
-
-  <template is="foot" />
 </view>
