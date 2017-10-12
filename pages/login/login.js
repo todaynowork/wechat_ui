@@ -4,6 +4,13 @@ Page({
     this.setData({
       hasLogin: app.globalData.hasLogin
     });
+
+        if (app.globalData.hasLogin == true) {
+
+    wx.reLaunch({
+      url: "../My_management/My_management"
+    })
+     };
   },
   data: {},
   login: function () {
