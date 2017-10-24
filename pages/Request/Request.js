@@ -3,9 +3,10 @@ Page({
   data: {
     systemInfo: {},
     _api: {},
-    navbar: ['看过的问题', '看过的知识'],
+    navbar: ['待解答', '已解答'],
     currentNavbar: 0,
     themes: [{name:'小刘'},{name:'小李'},{name:'小王'}],
+    WaitingAnswer: [{name: '小刘'}],
     list: [],
     hot_last_id: 0,
     latest_list: [],

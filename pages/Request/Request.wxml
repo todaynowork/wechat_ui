@@ -1,0 +1,47 @@
+<!--index.wxml-->
+<view>
+  <view class="navbar">
+    <view class="navbar-item" wx:for="{{navbar}}" wx:for-index="idx" data-idx="{{idx}}" bindtap="swichNav">
+      <text class="navbar-text {{currentNavbar==idx ? 'active' : ''}}" style="width: 90%">{{item}}</text>
+    </view>
+  </view>
+  <!--待解答  -->
+  <scroll-view class="hot-item-container {{currentNavbar==0 ? '' : 'hidden'}}" style="height: {{systemInfo.windowHeight-81}}px;" scroll-y="true" bindscrolltolower="pullUpLoad">
+    <view class='container' wx:for="{{WaitingAnswer}}">
+      <image src="../../image/xiaosongjia.jpg" class="Imgall"></image>
+      <!-- <image src="{{item.thumbnail}}" class="Imgall"></image> -->
+      <view>
+        <text class="textName">{{item.name}}</text>
+        <text class="textclassify">前端技术</text>
+        <text class="textTitle">Web 前端开发面临的挑战主要有哪些？</text>
+      </view>
+      <image src="../../image/person_answer@1x.png" class="ImgComments"></image>
+      <text class='TextComments'>3个人回答</text>
+      <image src="../../image/knowledge_uncheck@1x.png" class="ImgTime"></image>
+      <text class='TextTime'>2017/09/01</text>
+    </view>
+    <view class='ForwardText'>
+      <view class='TextForward'>还没有人回答哦！</view>
+      <view class='TextForward'>试试
+        <a href="http://www.baidu.com/" style="color:#41A1E8">点击这里</a> 分享给朋友吧！</view>
+    </view>
+  </scroll-view>
+  <!--已解答  -->
+  <scroll-view class="latest-item-container {{currentNavbar==1 ? '' : 'hidden'}}" style="height: {{systemInfo.windowHeight-81}}px;" scroll-y="true">
+    <view class='container' wx:for="{{themes}}">
+      <image src="../../image/xiaosongjia.jpg" class="Imgall"></image>
+      <!-- <image src="{{item.thumbnail}}" class="Imgall"></image> -->
+      <view>
+        <text class="textName">{{item.name}}</text>
+        <text class="textclassify">前端技术</text>
+        <text class="textTitle">Web 前端开发面临的挑战主要有哪些？</text>
+      </view>
+      <image src="../../image/person_answer@1x.png" class="ImgComments"></image>
+      <text class='TextComments'>3个人回答</text>
+      <image src="../../image/knowledge_uncheck@1x.png" class="ImgTime"></image>
+      <text class='TextTime'>2017/09/01</text>
+    </view>
+
+  </scroll-view>
+
+</view>

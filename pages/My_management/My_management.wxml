@@ -14,26 +14,26 @@
     </view>
   </view>
   <view>
-    <view class='form'>
+    <view class='form' bindtap='jumpToRequest'>
       <view>
         <image src="../../image/ask_check@1x.png" class="Imgall"></image>
         <text class='textAll'>我的提问</text>
       </view>
     </view>
-    <view class='form'>
+    <view class='form' bindtap='jumpToAnswer'>
       <view>
         <image src="../../image/person_answer@1x.png" class="Imgall"></image>
         <text class='textAll'>我的回答</text>
       </view>
     </view>
-    <view class='form'>
-      <view bindtap='jumpToCollection'>
+    <view class='form' bindtap='jumpToCollection'>
+      <view>
         <image src="../../image/person_favorite@1x.png" class="Imgall"></image>
         <text class='textAll'>我的收藏</text>
       </view>
     </view>
-    <view class='form'>
-      <view bindtap="jumpToHistory">
+    <view class='form' bindtap="jumpToHistory">
+      <view >
         <image src="../../image/person_lib@1x.png" class="Imgall"></image>
         <text class='textAll'>学习历史</text>
       </view>

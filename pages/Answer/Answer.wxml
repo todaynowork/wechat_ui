@@ -1,0 +1,33 @@
+<!--index.wxml-->
+<view>
+
+  <!--有回答  -->
+  <scroll-view class="hot-item-container {{themes.length?'':'hidden'}}" style="height: {{systemInfo.windowHeight-81}}px;" scroll-y="true">
+    <view class='container' wx:for="{{themes}}">
+      <image src="../../image/xiaosongjia.jpg" class="Imgall"></image>
+      <view>
+        <text class="textName">{{item.name}}</text>
+        <text class="textclassify">Java开发</text>
+        <text class="textTitle">如何确保N个线程可以访问N个资源的同时又不导致死锁？</text>
+      </view>
+      <image src="../../image/person_answer@1x.png" class="ImgComments"></image>
+      <text class='TextComments'>3个人回答</text>
+      <image src="../../image/knowledge_uncheck@1x.png" class="ImgTime"></image>
+      <text class='TextTime'>2017/09/01</text>
+    </view>
+
+  </scroll-view>
+  <!--没回答  -->
+  <scroll-view class="latest-item-container {{themes.length?'hidden':'show'}}" style="height: {{systemInfo.windowHeight-81}}px;" scroll-y="true">
+    <view>
+      <image src="../../image/null@1x.png" class="NullImg"></image>
+    </view>
+    <view class='ForwardText'>
+      <view class='TextForward'>还没有回答过问题哦！</view>
+      <view class='TextForward'>试试
+        <a href="http://www.baidu.com/" style="color:#41A1E8">点击这里</a> 看看有哪些新问题吧！</view>
+    </view>
+
+  </scroll-view>
+
+</view>

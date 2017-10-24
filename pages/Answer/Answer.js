@@ -4,23 +4,21 @@ Page({
     systemInfo: {},
     _api: {},
     navbar: ['看过的问题', '看过的知识'],
-    currentNavbar: 0,
-    themes: [{name:'小刘'},{name:'小李'},{name:'小王'}],
+    currentNavbar: "",
+    themes: [{ name: '小李' }, { name: '小刘' }, { name: '小黄' }],
     list: [],
     hot_last_id: 0,
     latest_list: [],
-    latest_last_id: 0,
-    Knowledge: [{ name: '问题一', content: '由各种物质组成的巨型球状天体，叫做星球。有一定的形状，有自己的运行轨道。' }, { name: '问题二', content: '由各种物质组成的巨型球状天体，叫做星球。有一定的形状，有自己的运行轨道。' },
-    { name: '问题三', content: '由各种物质组成的巨型球状天体，叫做星球。有一定的形状，有自己的运行轨道。' }]
+    latest_last_id: 0
   },
-  swichNav: function (e) {
-    this.setData({
-      currentNavbar: e.currentTarget.dataset.idx
-    })
-    if (e.currentTarget.dataset.idx == 1 && this.data.latest_list.length == 0) {
-      // this.pullUpLoadLatest()
-    }
-  },
+  // swichNav: function (e) {
+  //   this.setData({
+  //     currentNavbar: e.currentTarget.dataset.idx
+  //   })
+  //   if (e.currentTarget.dataset.idx == 1 && this.data.latest_list.length == 0) {
+  //     // this.pullUpLoadLatest()
+  //   }
+  // },
   jumpToCourtDetailInfo: function () {
     wx.navigateTo({
       url: "../CourtInfo/CourtInfo",
@@ -58,8 +56,8 @@ Page({
   //   var that = this;
   //   // 加载数据
   //   wx.request({
-  //     // url: 'http://news-at.zhihu.com/api/4/themes',
-  //     url: 'https://todaynowork.group/we_chat-0.0.1-SNAPSHOT/coursejson/20170923',
+  //     url: 'http://news-at.zhihu.com/api/4/themes',
+  //     // url: 'https://todaynowork.group/we_chat-0.0.1-SNAPSHOT/coursejson/20170923',
   //     header: { "Content-Type": "application/json" },
   //     success: function (res) {
   //       var data = res.data;

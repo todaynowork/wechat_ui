@@ -12,4 +12,14 @@ Page({
       url: "../Collection/Collection"
     });
   },
+  jumpToRequest: function () {
+    wx.navigateTo({
+      url: "../Request/Request"
+    });
+  },
+  jumpToAnswer: function () {
+    wx.navigateTo({
+      url: "../Answer/Answer"
+    });
+  },
 });
