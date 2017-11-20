@@ -22,4 +22,9 @@ Page({
       url: "../Answer/Answer"
     });
   },
+  jumpToLabel: function () {
+    wx.navigateTo({
+      url: "../label/label"
+    });
+  },
 });

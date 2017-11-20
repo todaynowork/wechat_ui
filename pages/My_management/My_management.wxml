@@ -38,7 +38,7 @@
         <text class='textAll'>学习历史</text>
       </view>
     </view>
-    <view class='form'>
+    <view class='form' bindtap='jumpToLabel'>
       <view>
         <image src="../../image/person_set@1x.png" class="Imgall"></image>
         <text class='textAll'>管理兴趣分类</text>
