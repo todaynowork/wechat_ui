@@ -1,7 +1,9 @@
 {
   "pages": [
+    
     "pages/My_management/My_management",
-	"pages/Request/Request",
+    "pages/label/label",
+	  "pages/Request/Request",
     "pages/Answer/Answer",
     "pages/Collection/Collection",
     "pages/History/History",

@@ -1,0 +1,154 @@
+.containerOther {
+width: 100%;
+height: 195rpx;
+background-color: #fff;
+margin-top: 2rpx;
+position: relative;
+top: 15rpx;
+/* border-bottom: 3rpx solid #d9d9d9; */
+}
+
+.containerOtherInside {
+width: 94%;
+height: 193rpx;
+background-color: #fff;
+position: relative;
+left: 20.25rpx;
+border-bottom: 3.5rpx solid #d9d9d9;
+}
+
+.ImageKnow {
+width: 120rpx;
+height: 120rpx;
+position: absolute;
+left: 20.25rpx;
+top: 38rpx;
+}
+
+.textTittle {
+color: #222;
+font-size: 32rpx;
+position: absolute;
+left: 165.75rpx;
+top: 33rpx;
+}
+
+.textContent {
+color: #999;
+font-size: 24rpx;
+position: absolute;
+left: 165.75rpx;
+top: 88rpx;
+}
+
+.swiper-container {
+position: relative;
+}
+
+.swiper-container .swiper {
+height: 300rpx;
+}
+
+.swiper-container .swiper .img {
+width: 100%;
+height: 100%;
+}
+
+.swiper-container .dots {
+position: absolute;
+left: 0;
+right: 0;
+bottom: 20rpx;
+display: flex;
+justify-content: center;
+}
+
+.swiper-container .dots .dot {
+margin: 0 8rpx;
+width: 14rpx;
+height: 14rpx;
+background: #fff;
+border-radius: 8rpx;
+transition: all 0.6s;
+}
+
+.swiper-container .dots .dot.active {
+width: 24rpx;
+background: #f80;
+}
+
+.textStyle {
+padding-left: 40rpx;
+padding-top: 24rpx;
+font-family: PingFangSC-Regular;
+font-size: 16px;
+color: #1E1E1E;
+letter-spacing: 0;
+margin-left: 60px;
+margin-top: 50px;
+}
+
+.ImgIcon {
+width: 11rpx;
+height: 11rpx;
+
+position: absolute;
+margin-top: 0px;
+}
+
+.content {
+  margin-top: 10px;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.content-item {
+height: 120px;
+width: 25%;
+background-color: #FFFFFF;
+border: 0 solid #E4E4E4;
+margin: 5px;
+position: relative;
+}
+
+.content-item image {
+  
+width: 68rpx;
+height: 68rpx;
+padding-left: 35%;
+padding-top: 50%;
+padding-bottom: 1%;
+
+
+}
+
+.content-item-text {
+position: absolute;
+bottom: 10px;
+color: gray;
+font-size: 10px;
+height: 125rpx;
+width: 98%;
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+padding-left: 30%;
+padding-right: 1%;
+padding-bottom: 1%;
+}
+
+.Videostyle {
+border-bottom: 3.5rpx solid #d9d9d9;
+}
+.button{
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+  height: 6%;
+width: 87%;
+background-color: #41A1E8;
+border: 0 solid #3884BD;
+border-radius: 4px;
+color:#FFFFFF;
+}
