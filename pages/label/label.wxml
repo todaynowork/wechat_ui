@@ -11,5 +11,16 @@
       </view>
     </view>
   </view>
-  <button class="button" >下一步</button>
+  <button bindtap="listenerButton" class="button" >下一步</button>
+
+<!--弹出框-->
+<modal 
+    title="更改兴趣分类"
+     hidden="{{hiddenModal}}"
+     confirm-text="确认"
+     cancel-text="取消"
+     bindconfirm="listenerConfirm"
+     bindcancel="listenerCancel" >
+     是否更改兴趣分类
+     </modal>
 </view>
