@@ -28,6 +28,7 @@ App({
                 console.log("did not get openid");
               }else{
                 that.globalData.token = res.data.sessionid;
+                that.globalData.openId = res.data.openId;
                 that.wxRequest("/forumjson",{sucess:function(res){
                   console.log(res.data);
                 }});
@@ -35,7 +36,7 @@ App({
             },
             method: 'POST'
           };
-          that.wxRequest("/loginPost", openIdReqConf);
+          that.wxRequest("/login", openIdReqConf);
         } else {
           console.log('获取用户登录态失败！' + res.errMsg)
         }
@@ -53,6 +54,26 @@ App({
         withCredentials: true,
         success: function(res) {
           that.globalData.userInfo = res.userInfo
+          let userReqConf = {
+            // url: '/loginPostTest',
+            data: {
+              openId: that.globalData.openId,
+              avatorUrl: res.userInfo.avatarUrl,
+              email:'',
+              nickName:res.userInfo.nickName
+            },
+            success: function (res) {
+
+              if (res.data.errcode) {
+                console.log(res.data);
+              } else {
+                //get customize user info, image
+                that.globalData.userInfo.email = res.data.email;
+              }
+            },
+            method: 'POST'
+          };
+          that.wxRequest("/user", userReqConf);
           typeof cb == "function" && cb(that.globalData.userInfo)
         }
       })
@@ -71,8 +92,9 @@ App({
   globalData: {
     userInfo: null,
     hasLogin: false,
-    apiContextUrl: 'https://todaynowork.group/wechat-dev-1.0',
-    token : 'null'
+    apiContextUrl: 'https://www.todaynowork.group/wechat-du-1.0',
+    token : 'null',
+    openId: null
   }
 })
 
