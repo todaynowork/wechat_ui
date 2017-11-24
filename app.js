@@ -84,7 +84,7 @@ App({
     requestConf.url = url;
     if (this.globalData.token){
       requestConf.header = requestConf.header || {};
-      requestConf.header['x-token'] = this.globalData.token;
+      requestConf.header['x-auth-token'] = this.globalData.token;
     }
     wx.request(requestConf);
   },

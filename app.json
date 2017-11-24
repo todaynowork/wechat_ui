@@ -1,6 +1,5 @@
 {
   "pages": [
-    "pages/dummy/dummy",
     "pages/My_management/My_management",
     "pages/label/label",
 	  "pages/Request/Request",
@@ -13,7 +12,7 @@
     "pages/online/Tieba_text/Tieba_text",
     "pages/calendar/calendar",
     "pages/online/Tieba_write/Tieba_write",
-
+    "pages/dummy/dummy",
     "pages/QA/QA",
     "pages/QA/Answer"
   ],
