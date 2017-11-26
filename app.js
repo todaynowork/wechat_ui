@@ -94,7 +94,7 @@ App({
   globalData: {
     userInfo: null,
     hasLogin: false,
-    apiContextUrl: 'https://www.todaynowork.group/wechat-du-1.0',
+    apiContextUrl: 'https://todaynowork.group/wechat-du-1.0',
     // apiContextUrl: 'http://localhost:8080',
     token : 'null',
     openId: null
