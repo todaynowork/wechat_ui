@@ -32,6 +32,7 @@ App({
                 that.wxRequest("/forumjson",{sucess:function(res){
                   console.log(res.data);
                 }});
+                that.getUserInfo();
               }
             },
             method: 'POST'
@@ -57,8 +58,8 @@ App({
           let userReqConf = {
             // url: '/loginPostTest',
             data: {
-              openId: that.globalData.openId,
-              avatorUrl: res.userInfo.avatarUrl,
+              // openId: that.globalData.openId,
+              avatarUrl: res.userInfo.avatarUrl,
               email:'',
               nickName:res.userInfo.nickName
             },
@@ -69,6 +70,7 @@ App({
               } else {
                 //get customize user info, image
                 that.globalData.userInfo.email = res.data.email;
+                that.globalData.userInfo.userId = res.data.id;
               }
             },
             method: 'POST'
@@ -93,6 +95,7 @@ App({
     userInfo: null,
     hasLogin: false,
     apiContextUrl: 'https://www.todaynowork.group/wechat-du-1.0',
+    // apiContextUrl: 'http://localhost:8080',
     token : 'null',
     openId: null
   }
