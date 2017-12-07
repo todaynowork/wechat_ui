@@ -27,4 +27,9 @@ Page({
       url: "../label/label"
     });
   },
+  jumpToErCode: function () {
+    wx.navigateTo({
+      url: "../erweima/erweima"
+    });
+  },
 });

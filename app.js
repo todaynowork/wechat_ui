@@ -6,6 +6,30 @@ App({
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
     var that = this;
+    // let userReqConf = {
+    //   // url: '/loginPostTest',
+    //   data: {
+    //     wechatConf: {
+    //       "path": "pages/My_management/My_management?index=678dd99"
+    //     },
+    //     objectId: "12345678",
+    //     scene: "CREG",
+    //     replace: true
+    //   },
+    //   success: function (res) {
+
+    //     if (res.data.errcode) {
+    //       console.log(res.data);
+    //     } else {
+    //       //get customize user info, image
+    //       console.log(res.data.fileName);
+    //     }
+    //   },
+    //   method: 'POST'
+    // };
+    // that.wxRequest("/2_d_code", userReqConf);
+
+    
     wx.login({
       success: function (res) {
         if (res.code) {
@@ -44,7 +68,64 @@ App({
       }
     });
   },
+  generate2DCode:function(data,callback){
+    // let requestConfig = {
+    //   // url: '/loginPostTest',
+    //   data: {
+    //     wechatConf: {
+    //       "path": "pages/My_management/My_management?index=678dd99"
+    //     },
+    //     objectId: "12345678",
+    //     scene: "CREG",
+    //     replace: true
+    //   },
+    //   success: function (res) {
 
+    //     if (res.data.errcode) {
+    //       console.log(res.data);
+    //     } else {
+    //       //get customize user info, image
+    //       console.log(res.data.fileName);
+    //     }
+    //   },
+    //   method: 'POST'
+    // };
+    let requestConfig = {
+      // url: '/loginPostTest',
+      data: data,
+      success:callback,
+      method: 'POST'
+    };
+    this.wxRequest("/2_d_code", requestConfig);
+  },
+  retrieve2Dcode: function (objectId,scene, callback){
+    // let userRerequestConfigqConf = {
+    //   data: {
+    //     objectId: "12345678",
+    //     scene: "CREG"
+    //   },
+    //   success: function (res) {
+
+    //     if (res.data.errcode) {
+    //       console.log(res.data);
+    //     } else {
+    //       //get customize user info, image
+    //       console.log(res.data.fileName);
+    //     }
+    //   },
+    //   method: 'GET'
+    // };
+
+    let requestConfig = {
+      data: {
+        objectId: objectId,
+        scene: scene
+      },
+      success: callback,
+      method: 'GET'
+    };
+    this.wxRequest("/2_d_code", requestConfig);
+  },
   getUserInfo: function(cb) {
     var that = this
     if (this.globalData.userInfo) {
@@ -94,7 +175,7 @@ App({
   globalData: {
     userInfo: null,
     hasLogin: false,
-    apiContextUrl: 'https://todaynowork.group/wechat-du-1.0',
+    apiContextUrl: 'https://todaynowork.group/wechat-prod-1.0',
     // apiContextUrl: 'http://localhost:8080',
     token : 'null',
     openId: null

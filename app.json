@@ -2,7 +2,7 @@
   "pages": [
     "pages/My_management/My_management",
     "pages/label/label",
-	  "pages/Request/Request",
+    "pages/Request/Request",
     "pages/Answer/Answer",
     "pages/Collection/Collection",
     "pages/History/History",
@@ -14,7 +14,8 @@
     "pages/online/Tieba_write/Tieba_write",
     "pages/dummy/dummy",
     "pages/QA/QA",
-    "pages/QA/Answer"
+    "pages/QA/Answer",
+    "pages/erweima/erweima"
   ],
   "window": {
     "navigationBarBackgroundColor": "#F9F9F9",
@@ -50,12 +51,6 @@
         "iconPath": "image/set_uncheck@1x.png",
         "pagePath": "pages/My_management/My_management",
         "text": "个人中心"
-      },
-      {
-        "selectedIconPath": "image/set_check@1x.png",
-        "iconPath": "image/set_uncheck@1x.png",
-        "pagePath": "pages/dummy/dummy",
-        "text": "DummyLinks"
       }
     ]
   }

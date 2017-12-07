@@ -44,6 +44,12 @@
         <text class='textAll'>管理兴趣分类</text>
       </view>
     </view>
+    <view class='form' bindtap='jumpToErCode'>
+      <view>
+        <image src="../../image/person_set@1x.png" class="Imgall"></image>
+        <text class='textAll'>二维码示例</text>
+      </view>
+    </view>
   </view>
 
 </view>
